@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!--
+    Kapujino Batch Installer Manifest File
+    
+-->
+<installer>
+    <!--
+        Addons is a required container for a list of addon username and addon_id pairs.
+        Each container requires both pairs.
+    -->
+    <addons>
+        <addon>
+            <addon_id>repository.xstream</addon_id>
+            <username>streamxstream</username>
+        </addon>
+        <addon>
+            <addon_id>repository.addons4kodi</addon_id>
+            <username>a4k-openproject</username>
+        </addon>
+        <addon>
+            <addon_id>plugin.video.xstream</addon_id>
+            <username>streamxstream</username>
+        </addon>
+        <addon>
+            <addon_id>plugin.program.super.favourites</addon_id>
+            <username>spoyser</username>
+        </addon>
+        <addon>
+            <addon_id>plugin.video.openmeta</addon_id>
+            <username>a4k-openproject</username>
+        </addon>
+        <addon>
+            <addon_id>script.extendedinfo</addon_id>
+            <username>a4k-openproject</username>
+        </addon>
+        <addon>
+            <addon_id>service.fanart.proxy</addon_id>
+            <username>tvaddonsco</username>
+        </addon>
+    </addons>
+    <!--
+        Configs is an optional container for a list of config files and destinations.
+        This is not limited to config files; could include images, databases, etc.
+        *** Be careful, this it will overwrite destinations. ***
+        Each file is copied overwriting the distination.
+        ./configs/test.xml will overwrite special://profile/addon_data/plugin.video.animaltv/test.xml
+    -->
+    <configs dir="configs">
+        <config>
+            <source>capture.py</source>
+	    <destination>special://home/addons/plugin.program.super.favourites/</source>
+        </config>
+        <config>
+            <source>search.xstream.ds.json</source>
+	    <destination>special://userdata/addon_data/plugin.video.openmeta/Players/</source>
+        </config>
+        <config>
+            <source>favourites.xml</source>
+	    <destination>special://userdata/addon_data/plugin.program.super.favourites/Super Favourites/</source>
+        </config>
+    </configs>
+    <!--
+        Settings is an optional container for a list of addon settings key and value pairs.
+    -->
+    <settings>
+        <setting addon_id="plugin.video.openmeta">
+            <key>moviesdefault</key>
+            <value>search [COLOR blue]-[/COLOR] xStream ([COLOR blue]DS[/COLOR])</value>
+        </setting>
+        <setting addon_id="plugin.video.openmeta">
+            <key>tvshowsdefault</key>
+            <value>search [COLOR blue]-[/COLOR] xStream ([COLOR blue]DS[/COLOR])</value>
+        </setting>
+        <setting addon_id="plugin.video.xstream">
+            <key>hosterSelect</key>
+            <value>List</value>
+        </setting>
+        <setting addon_id="plugin.video.xstream">
+            <key>prefLanguage</key>
+            <value>0</value>
+        </setting>
+        <setting addon_id="script.extendedinfo">
+            <key>LanguageID</key>
+            <value>de</value>
+        </setting>
+        <setting addon_id="plugin.program.super.favourites">
+            <key>AUTOSTART</key>
+            <value>false</value>
+        </setting>
+        <setting addon_id="plugin.program.super.favourites">
+            <key>CONTEXT</key>
+            <value>true</value>
+        </setting>
+    </settings>
+    <!--
+        Optionally issue a series of built-in commands.
+        *** Be careful, know what you are doing here! ***
+    -->
+    <builtins>
+        <command>InstallAddon(resource.language.de_de)</command>
+        <command>SetGUILanguage(resource.language.de_de)</command>
+	<command>RunPlugin("plugin://plugin.video.xstream/?function=updateXstream")</command>
+	<command>RunPlugin("plugin://plugin.program.super.favourites")</command>
+    <!--
+	<command>RunPlugin("plugin://plugin.video.openmeta/setup/total")</command>
+        <command>InstallAddon(skin.unity)</command>
+    -->
+    </builtins>
+    <!--
+        Optionally issue a series of JSONRPC commands.
+        *** Be very careful, know what you are doing here! ***
+    <jsonrpc>
+        <command>
+            <method>Settings.SetSettingValue</method>
+            <params>{"setting":"lookandfeel.skin","value": "skin.unity"}</params>
+            <id>1</id>
+        </command>
+    </jsonrpc>
+    -->
+</installer>

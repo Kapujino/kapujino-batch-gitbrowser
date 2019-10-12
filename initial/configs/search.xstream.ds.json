@@ -1,0 +1,34 @@
+{
+"name"         : "search [COLOR blue]-[/COLOR] xStream ([COLOR blue]DS[/COLOR])",
+"repository"   : "repository.xstream",
+"plugin"       : "plugin.video.xstream",
+"priority"     : 200,
+"id"           : "search.xstream.ds",
+"filters"      : {},
+"postprocess"  : "",
+"movies"       : [
+ [
+  {
+   "language"  : "de",
+   "link"      : "plugin://plugin.program.super.favourites/?cmd=ActivateWindow(10025%2c%22plugin%3a%2f%2fplugin.video.xstream%3ffunction%3dglobalSearch%26params%3d0%26searchterm%3d{title}%26site%3dglobalSearch%22)&amp;image=special%3a%2f%2fhome%2faddons%2fplugin.video.xstream%2ficon.png&amp;label=xStream_search&amp;mode=650&quot;,return)",
+   "steps"     : [
+    ],
+   "action"    : "ACTIVATE"
+  }
+ ]
+],
+ "tvshows"      : [
+ [
+  {
+   "language"  : "de",
+   "link"      : "plugin://plugin.program.super.favourites/?cmd=ActivateWindow(10025%2c%22plugin%3a%2f%2fplugin.video.xstream%3ffunction%3dglobalSearch%26params%3d0%26searchterm%3d{clearname}%26site%3dglobalSearch%22)&amp;image=special%3a%2f%2fhome%2faddons%2fplugin.video.xstream%2ficon.png&amp;label=xStream_search&amp;mode=650&quot;,return)",
+   "steps"     : [
+    ],
+   "action"    : "ACTIVATE"
+  }
+ ]
+],
+ "musicvideos"  : [],
+ "music"        : [],
+ "live"         : []
+}

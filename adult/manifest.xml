@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!--
+    Kapujino Batch Installer Manifest File
+    
+-->
+<installer>
+    <!--
+        Addons is a required container for a list of addon username and addon_id pairs.
+        Each container requires both pairs.
+    -->
+    <addons>
+        <addon>
+            <addon_id>repository.xbmcadult</addon_id>
+            <username>xbmc-adult</username>
+        </addon>
+        <addon>
+            <addon_id>repository.adulthideout</addon_id>
+            <username>Vashiel</username>
+        </addon>
+        <addon>
+            <addon_id>plugin.video.adulthideout</addon_id>
+            <username>Vashiel</username>
+        </addon>
+        <addon>
+            <addon_id>plugin.video.videodevil</addon_id>
+            <username>xbmc-adult</username>
+        </addon>
+    </addons>
+</installer>

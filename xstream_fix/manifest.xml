@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!--
+    Kapujino Batch Installer Manifest File
+    
+-->
+<installer>
+    <!--
+        Addons is a required container for a list of addon username and addon_id pairs.
+        Each container requires both pairs.
+    -->
+    <addons>
+        <addon>
+            <addon_id>repository.xstream</addon_id>
+            <username>streamxstream</username>
+        </addon>
+        <addon>
+            <addon_id>plugin.video.xstream</addon_id>
+            <username>streamxstream</username>
+        </addon>
+    </addons>
+    <!--
+        Configs is an optional container for a list of config files and destinations.
+        This is not limited to config files; could include images, databases, etc.
+        *** Be careful, this it will overwrite destinations. ***
+        Each file is copied overwriting the distination.
+        ./configs/test.xml will overwrite special://profile/addon_data/plugin.video.animaltv/test.xml
+    -->
+    <configs dir="configs">
+        <config>
+            <source>xstream.py</source>
+	    <destination>special://home/addons/plugin.video.xstream/</source>
+        </config>
+    </configs>
+</installer>
