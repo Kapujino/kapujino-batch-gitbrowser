@@ -113,9 +113,9 @@
         *** Be careful, know what you are doing here! ***
     -->
     <builtins>
-        <command>InstallAddon(resource.language.de_de)</command>
-        <command>SetGUILanguage(resource.language.de_de)</command>
-        <command>InstallAddon(service.subtitles.opensubtitles)</command>
+        <command>InstallAddon("resource.language.de_de")</command>
+        <command>SetGUILanguage("resource.language.de_de")</command>
+        <command>InstallAddon("service.subtitles.opensubtitles")</command>
     <!--
 	<command>RunPlugin("plugin://plugin.video.xstream/?function=updateXstream")</command>
 	<command>RunPlugin("plugin://plugin.video.openmeta/setup/total")</command>
