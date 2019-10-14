@@ -18,6 +18,10 @@
             <username>a4k-openproject</username>
         </addon>
         <addon>
+            <addon_id>plugin.video.youtube</addon_id>
+            <username>jdf76</username>
+        </addon>
+        <addon>
             <addon_id>plugin.video.xstream</addon_id>
             <username>streamxstream</username>
         </addon>
@@ -32,10 +36,6 @@
         <addon>
             <addon_id>script.extendedinfo</addon_id>
             <username>a4k-openproject</username>
-        </addon>
-        <addon>
-            <addon_id>service.fanart.proxy</addon_id>
-            <username>tvaddonsco</username>
         </addon>
     </addons>
     <!--
@@ -91,6 +91,22 @@
             <key>CONTEXT</key>
             <value>true</value>
         </setting>
+        <setting addon_id="plugin.video.youtube">
+            <key>youtube.api.key.switch</key>
+            <value>0</value>
+        </setting>
+        <setting addon_id="plugin.video.youtube">
+            <key>kodion.setup_wizard</key>
+            <value>false</value>
+        </setting>
+        <setting addon_id="plugin.video.youtube">
+            <key>youtube.language</key>
+            <value>de-de</value>
+        </setting>
+        <setting addon_id="plugin.video.youtube">
+            <key>youtube.region</key>
+            <value>DE</value>
+        </setting>
     </settings>
     <!--
         Optionally issue a series of built-in commands.
@@ -99,9 +115,9 @@
     <builtins>
         <command>InstallAddon(resource.language.de_de)</command>
         <command>SetGUILanguage(resource.language.de_de)</command>
-	<command>RunPlugin("plugin://plugin.video.xstream/?function=updateXstream")</command>
-	<command>RunPlugin("plugin://plugin.program.super.favourites")</command>
+        <command>InstallAddon(service.subtitles.opensubtitles)</command>
     <!--
+	<command>RunPlugin("plugin://plugin.video.xstream/?function=updateXstream")</command>
 	<command>RunPlugin("plugin://plugin.video.openmeta/setup/total")</command>
         <command>InstallAddon(skin.unity)</command>
     -->

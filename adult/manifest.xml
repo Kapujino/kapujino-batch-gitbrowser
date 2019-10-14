@@ -26,4 +26,22 @@
             <username>xbmc-adult</username>
         </addon>
     </addons>
+    <!--
+          Settings is an optional container for a list of addon settings key and value pairs.
+      -->
+      <settings>
+          <setting addon_id="script.extendedinfo">
+              <key>include_adults</key>
+              <value>true</value>
+          </setting>
+          <setting addon_id="plugin.video.xstream">
+              <key>showAdult</key>
+              <value>true</value>
+          </setting>
+          <setting addon_id="plugin.video.videodevil">
+              <key>video_type</key>
+              <value>3</value>
+          </setting>
+      </settings>
+      </settings>
 </installer>
