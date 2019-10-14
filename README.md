@@ -13,6 +13,7 @@ Requirements
 
 Tested on
 - osmc (kodi 18.3) @ Raspberry Pi 3B
+- raspbian lite (kodi 18.4) @ Raspberry Pi 4B
 - arch linux (kodi 18.4)
 - android tv (kodi 18.4) @ phillips android tv
 
