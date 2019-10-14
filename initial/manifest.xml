@@ -101,7 +101,7 @@
         </setting>
         <setting addon_id="plugin.video.youtube">
             <key>youtube.language</key>
-            <value>de-de</value>
+            <value>de</value>
         </setting>
         <setting addon_id="plugin.video.youtube">
             <key>youtube.region</key>
