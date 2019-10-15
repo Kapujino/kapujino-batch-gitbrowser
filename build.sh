@@ -3,13 +3,13 @@
 [ $# -eq 0 ] && {
 	echo "ERROR: NO argument!"
 	echo "usage: ./build.sh [TYPE] [VERSION]"
-	echo "currently types: initial, xstream_fix, adult"
+	echo "current types: initial, xstream_fix, adult"
 	exit 1
 }
 [ -e $2] && {
 	echo "ERROR: VERSION argument missing!"
 	echo "usage: ./build.sh [TYPE] [VERSION]"
-	echo "currently types: initial, xstream_fix, adult"
+	echo "current types: initial, xstream_fix, adult"
 	exit 1
 }
 
@@ -28,7 +28,7 @@ case "$TYPE" in
 		;;
 	*)
 		echo "usage: ./build.sh [TYPE] [VERSION]"
-		echo "available types: initial, xstream_fix, adult"
+		echo "current types: initial, xstream_fix, adult"
 		exit 1
 		;;
 esac
